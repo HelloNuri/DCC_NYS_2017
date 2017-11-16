@@ -15,6 +15,53 @@
 
 </head>
 <body>
+  <script>
+  var i = 1;
+  var image = new Image;
+  function next(){
+    var one = document.getElementById("image_1");
+    var two = document.getElementById("image_2");
+    var three = document.getElementById("image_3");
+    var four = document.getElementById("image_4");
+    //console.log("../images/image"+(i+4));
+
+    image.onload=function(){
+       console.log(i+4);
+      console.log("들어갔땅");
+    one.src="../images/image"+(i+4)+".jpg";
+    two.src="../images/image"+(i+5)+".jpg";
+    three.src="../images/image"+(i+6)+".jpg";
+    four.src="../images/image"+(i+7)+".jpg";
+    i=i+7;
+        //파일 존재 시 내용
+       }
+       image.onerror=function(){
+        //파일 없을 시 내용
+        console.log(i+4);
+        console.log("안들어갔당");
+        alert("이미지가 존재하지 않습니다.");
+      }
+      image.src="../images/image"+(i+5)+".jpg";
+    }
+  function back(){
+    var one = document.getElementById("image_1");
+    var two = document.getElementById("image_2");
+    var three = document.getElementById("image_3");
+    var four = document.getElementById("image_4");
+
+    //console.log("../images/image"+(i+4));
+    if(i>1){
+    one.src="../images/image"+(i-4)+".jpg";
+    two.src="../images/image"+(i-5)+".jpg";
+    three.src="../images/image"+(i-6)+".jpg";
+    four.src="../images/image"+(i-7)+".jpg";
+    i=i-7;
+    }
+    else{
+      alert("첫번째 페이지 입니다.");
+    }
+  }
+  </script>
   <!-- 파란 색 배경 -->
   <section class="backgroundBlue"></section>
   <!-- 하늘색 메뉴바 -->
