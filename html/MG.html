@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모의고사</title>
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/lightbox.css">
+</head>
+<body>
+  <!-- 파란 색 배경 -->
+  <section class="backgroundBlue"></section>
+  <!-- 하늘색 메뉴바 -->
+  <nav class="menu">
+    <article class="flexBox">
+      <a href="#"><div class="letter nav">모의고사</div></a>
+      <a href="./GT.html"><div class="letter nav">가정통신문</div></a>
+      <a href="#"><div class="letter nav"></div></a> <!-- flex로 하기 위한 빈 태그 -->
+      <a href="S.html"><div class="letter nav">시험지</div></a>
+      <a href="G.html"><div class="letter nav">기타</div></a>
+    </article>
+  </nav>
+  <!-- 사진들을 flexbox하기 위한 영역 -->
+  <article class="images">
+    <!-- figure는 사진과 사진의 이름을 모두 담는 영역 -->
+    <figure>
+      <a class="example-image-link" href="../images/BS.jpg" data-lightbox="test"><img class="example-image" src="../images/BS.jpg" alt="image_1"></a>
+      <div class="image_cap"><span class="letter">name</span></div>
+    </figure>
+    <figure>
+      <a class="example-image-link" href="../images/CJ.png" data-lightbox="test"><img class="example-image" src="../images/CJ.png" alt="image_2"></a>
+      <div class="image_cap"><span class="letter">name</span></div>
+    </figure>
+    <figure>
+      <a class="example-image-link" href="../images/DR.png" data-lightbox="test"><img class="example-image" src="../images/DR.png" alt="image_3"></a>
+      <div class="image_cap"><span class="letter">name</span></div>
+    </figure>
+    <figure>
+      <a class="example-image-link" href="../images/EI.jpg" data-lightbox="test"><img class="example-image" src="../images/EI.jpg" alt="image_4"></a>
+      <div class="image_cap"><span class="letter">name</span></div>
+    </figure>
+  </article>
+
+  <!-- lightbox와 jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/lightbox.js"></script>
+
+</body>
+</html>

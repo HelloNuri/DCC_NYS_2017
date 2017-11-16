@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@font-face {
+  font-family: ComicSans;
+  src: url(../font/ComicSansMS3.ttf) format('truetype');
+}
+/* 폰트 */
+.letter {
+  font-family: 'ComicSans';
+}
+html, body{
+  width: 100%;
+  height : 100%;
+  margin: 0 0;
+  background-color: white;
+}
+/*배경의 하늘색*/
+.backgroundBlue{
+  width: 100%;
+  height: 73%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #4dcbf9;
+  z-index: 0;
+}
+/*상단 메뉴바의 배경*/
+.menu{
+  width: 100%;
+  height: 11%;
+  position: relative;
+  top: 4.5%;
+  background-color: rgba(240,240,255,0.5)
+}
+/*상단 메뉴바의 글씨를 flex한다*/
+.flexBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*상단 메뉴바의 글씨를 담는 부분*/
+.nav{
+  float: left;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+/*4개 사진을 담는 flexbox 영역*/
+.images{
+  position: absolute;
+  bottom: 14.7%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+/*사진과 사진의 이름을 담는 영역*/
+figure{
+  width: 17%;
+  height: 40%;
+  border-radius: 5px 5px;
+  z-index: 1;
+}
+img.example-image{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 74%;
+  /*z-index: 1;*/
+}
+.image_cap{
+  position: relative;
+  top: -10px;
+  width: 100%;
+  height: 25%;
+  background-color: #4dcbf9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_cap>span{
+  color: white;
+  font-size: 30pt;
+}
