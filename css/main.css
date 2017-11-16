@@ -1,0 +1,56 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #4dcbf9
+}
+
+@charset "UTF-8";
+@font-face {
+  font-family: ComicSans;
+  src: url(../font/ComicSansMS3.ttf) format('truetype');
+}
+
+.logo{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-text{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:-180px;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+/*상단 메뉴바의 배경*/
+.menu{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-top: -50px;
+  background-color: rgba(240,240,255,0.5)
+}
+/*상단 메뉴바의 글씨를 flex한다*/
+.flexBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*상단 메뉴바의 글씨를 담는 부분*/
+.nav{
+  position: relative;
+  float: left;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.letter{
+    font-family : 'ComicSans';
+}

@@ -29,7 +29,8 @@ html, body{
   height: 11%;
   position: relative;
   top: 4.5%;
-  background-color: rgba(240,240,255,0.5)
+  background-color: rgba(240,240,255,0.5);
+  z-index: 1;
 }
 /*상단 메뉴바의 글씨를 flex한다*/
 .flexBox{
@@ -45,6 +46,7 @@ html, body{
   color: white;
   font-weight: bold;
   font-size: 30px;
+  z-index: 2;
 }
 /*4개 사진을 담는 flexbox 영역*/
 .images{
